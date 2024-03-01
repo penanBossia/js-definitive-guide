@@ -49,6 +49,7 @@ class Histogram {
     toString() {
         // Convert the Map to an array of [key,value] arrays
         let entries = [...this.letterCounts];
+        // console.log(entries);
 
         // Sort the array by count, then alphabetically
         entries.sort((a,b) => {              // A function to define sort order.
@@ -71,6 +72,8 @@ class Histogram {
         let lines = entries.map(
             ([l,n]) => `${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%`
         );
+
+        console.log(lines);
 
         // And return the concatenated lines, separated by newline characters.
         return lines.join("\n");

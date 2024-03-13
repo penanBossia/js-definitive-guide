@@ -3,7 +3,7 @@
  * Recall that a complex number is the sum of a real number and an
  * imaginary number and that the imaginary number i is the square root of -1.
  */
-class Complex {
+module.exports = class Complex {
     // Once class field declarations are standardized, we could declare
     // private fields to hold the real and imaginary parts of a complex number
     // here, with code like this:
@@ -59,6 +59,6 @@ class Complex {
 }
 
 // Here are some class fields that hold useful predefined complex numbers.
-Complex.ZERO = new Complex(0,0);
+/*Complex.ZERO = new Complex(0,0);
 Complex.ONE = new Complex(1,0);
-Complex.I = new Complex(0,1);
+Complex.I = new Complex(0,1);*/

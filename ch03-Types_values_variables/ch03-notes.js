@@ -205,8 +205,8 @@ let greeting = `Hello ${ firstName }`; // greeting = Hello Choco
 
 /**
  * Les tagged templates
- * Une fonctionnalité puissante des templates literals est que si une finction précède le template litteral, alors le
- * texte et les valeurs des expressions à l'intérieur dy template sont passées comme arguments de la fonction. On appellera
+ * Une fonctionnalité puissante des templates literals est que si une fonction précède le template litteral, alors le
+ * texte et les valeurs des expressions à l'intérieur du template sont passées comme arguments de la fonction. On appellera
  * cette fonction une tagged fonction
  * tagFunction`string text ${expression} string2 text2`; La fonction recoit deux ensembles de paramètres :
  * 1. Un tableau de strings : les strings qui sont autour des expressions
@@ -222,7 +222,7 @@ let firstanme = "Choco";
 let lastname = "Coulibaly"
 tagFunction`Hello ${firstName} mon ami ${lastname}`;
 
-// les tagged templates sont parfois utiles par exemple pour  créer des congtenus des HTML ou SQL dynamiques
+// les tagged templates sont parfois utiles par exemple pour  créer des contenus des HTML ou SQL dynamiques
 const sql = (strings, ...values) => {
     // Échapper les valeurs pour éviter les injections SQL
     const escapedValues = values.map(value => {

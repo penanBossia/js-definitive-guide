@@ -159,7 +159,7 @@ array11.forEach((value, index, arr) => { // arr c'est array11
 
 /** forEach() 
  * Note : cette methode d'itération ne permet pas de terminé l'itération avant que tous les éléments n'aient été passé
- * à la fonction en argument. Il n'y a pas d"équivalent de bereak qu'on a dans une boucle for
+ * à la fonction en argument. Il n'y a pas d"équivalent de break qu'on a dans une boucle for
  */
 let array12 = [1, 2, 3], sum = 0;
 array12.forEach(elt => sum += elt); // sum = 6
@@ -295,7 +295,7 @@ array17.slice(0, -2); // => [ 2, 15, 3, 7 ], array17 = [ 2, 15, 3, 7, 9, 11 ]
 
 /** splice() 
  * modifie donc le tableau qui l'invoque contrairement à slice : genre on est presque homo mais différents. Loool
- * les éléments du tableau qui viennent après les éléments supprimés ou ajoutés voient leurs position maj cons"quemment,
+ * les éléments du tableau qui viennent après les éléments supprimés ou ajoutés voient leurs position maj conséquemment,
  * de sorte à rester contigus au reste du tableau.
  * splice(start, nbrToSplice) : coupe nbrToSplice élements du tableau à partir de start. si nbrToSplice n'est pas précisé,
  * on coupe jusqu'à la fin. Le resultat est un tableau des éléments coupés. le tableau initial est emputé de ces éléments
@@ -374,7 +374,7 @@ array21.sort((a, b) => a - b); // => [ 4, 33, 222, 1111 ]
  * Si le but est de convertir pour une utilisation future, alos prévilégier la sérialization avec JSON.stringify()
  * 
  * join() : convertit les éléments d'un tableau en string et les concatène. elle admet un argument qui est le
- * séparateur. Par défaut, il est ",". join() s'en gfout des imbrications de tableaux (comme toString() aussi).
+ * séparateur. Par défaut, il est ",". join() s'en fout des imbrications de tableaux (comme toString() aussi).
  * 
  * L'inverse de la méthode join() est la méthode split()
  * Le toString() sur les Array marche comme le join() sans argument.
@@ -397,7 +397,7 @@ console.log([1, 2, [3, [9]]].join()); // => '1,2,3',9
  *  surtout vrai quand ces traitement ne modifient pas le tableau ou s'il ne modifie pas la taille du tableau
  * 
  * Puisque les array-like objets n'héritent pas de Array.prototype on ne peut pas directemnt appeler les méthodes
- * de array sur eux. On peut cependant me faire en utilisant la méthode Function.call
+ * de array sur eux. On peut cependant le faire en utilisant la méthode Function.call
  */
 let a = {"0": "a", "1": "b", "2": "c", length: 3}; // An array-like object
 Array.prototype.join.call(a, "+") // => "a+b+c"

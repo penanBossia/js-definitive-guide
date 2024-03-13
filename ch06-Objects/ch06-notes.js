@@ -128,7 +128,7 @@ for (let prop in monObjet2) {
  * copie/remplace pas les methodes getter et setter des objets source et target
  */
 
-obj5 = Object.assign({}, monObjet1, obj5); // copie de monOBjet1 dans un nouvel aobjet puis de obj5 dans le resultat.
+obj5 = Object.assign({}, monObjet1, obj5); // copie de monOBjet1 dans un nouvel objet puis de obj5 dans le resultat.
 // On affecte tout ça à obj5 -> comme pour copier les propriété de monObjet1 qui n'existent pas dans obj5
 obj5 = {...monObjet1, ...obj5};
 obj5; // => { y: 2, classSymbol: 4 }

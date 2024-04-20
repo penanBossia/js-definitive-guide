@@ -3,7 +3,7 @@
  * classe s'il héritent des propriétés (le plus souvent des méthodes) d'un même prototype.
  * Par ailleurs, si deux objets héritent du même prototype, alors ils ont été créés par le même constructeur ou le même factory.
  * 
- * En JSn on peut définir un constructeur comme tout objet de tyope fonction qui a une propriété prototype. Ainsi donc, tous
+ * En JSn on peut définir un constructeur comme tout objet de type fonction qui a une propriété prototype. Ainsi donc, tous
  * les objets créés avec le même constructeur héritent du même objet - prototype - et sont membres d'une même classe.
  * 
  */

@@ -27,7 +27,7 @@ export {maFunction, MaClass}; // cette syntaxe traduit le fait d'exporter la fon
  * une fonction anonyme...
  * un module ne peut avoir qu'un seul export default.
  * 
- * Note : import et export sont des top-level instrauctions i.e ne peuvent pas se mettre dans le body d'une function
+ * Note : import et export sont des top-level instructions i.e ne peuvent pas se mettre dans le body d'une function
  * ou d'une classe.
  * Comme pour les functions, les imports sont hoisted
  */
